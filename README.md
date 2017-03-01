@@ -67,3 +67,12 @@ end
 
 
 #### Write your domain model here:
+
+#### movies
+| id | title | release_year
+#### genres
+| id | name
+#### movie_genres
+| id | movie_id | genre_id
+#### reviews
+id | content | movie_id
