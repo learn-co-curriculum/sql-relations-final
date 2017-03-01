@@ -14,6 +14,11 @@ class Review
 
 
   def movie
+    sql = <<-SQL
+    SELECT movies.* FROM movies
+    WHERE movies.id = ?
+    SQL
+    self.class.db.execute(sql, self.movie_id)
   end
 
 end
