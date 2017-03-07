@@ -52,6 +52,8 @@ end
 ```
   - Genre#movies
     - returns all of the movies with that given genre
+  - Movie.by_year(year)
+    - given a year, find all of the movies that were released in that given year. 
   - Movie#genres
     - returns all of the genres for that given movie
   - Movie#reviews
